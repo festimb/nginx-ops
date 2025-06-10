@@ -1,0 +1,19 @@
+# Environment variables
+.env
+
+# SSL certificates and keys (if any)
+certs/
+keys/
+
+# Logs and runtime files
+logs/
+*.log
+*.pid
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE and editor folders
+.vscode/
+.idea/
