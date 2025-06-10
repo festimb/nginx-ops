@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  nginx:
+    build: .
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./certs:/etc/ssl/certs:ro
+      - ./keys:/etc/ssl/private:ro
+    environment:
+      SITE_FQDN: ${SITE_FQDN}
+      SITE_CERT: ${SITE_CERT}
+      SITE_KEY:  ${SITE_KEY}
+      LIMIT_RPS: ${LIMIT_RPS}
