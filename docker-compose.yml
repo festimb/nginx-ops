@@ -13,4 +13,3 @@ services:
       SITE_FQDN: ${SITE_FQDN}
       SITE_CERT: ${SITE_CERT}
       SITE_KEY:  ${SITE_KEY}
-      LIMIT_RPS: ${LIMIT_RPS}
